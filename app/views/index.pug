@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .grid-container
+    .grid-item
+      h1= title
+      p Please, pick a country from the list below!
+      #selection-box
+    .grid-item.polaroid.rotate-right
+      h4(id='text-area-title') TITLE PLACEHOLDER
+      p(id='text-area') TEXT PLACEHOLDER
+
+  script(src='https://unpkg.com/react@16/umd/react.development.js')
+  script(src='https://unpkg.com/react-dom@16/umd/react-dom.development.js')
+  script(src='js/components.js')
+  script.
+    document.getElementById("countries-selectbox").selectedIndex = 1;
